@@ -73,6 +73,7 @@ namespace ValheimProject.PageApp
             {
                 GigaLista.ItemsSource = new List<Resource>(ClassApp.ClassConnection.Connection.Resource.Where(u => u.is_delete != false).ToList());
             }
+
         }
 
         private void delete_Click(object sender, RoutedEventArgs e)
